@@ -1,0 +1,16 @@
+	1. Ordner öffnen oder erstellen
+	2. Projekt per Terminal (Strg+ö) erzeugen lassen
+		- Konsolenanwendung:
+			dotnet new console --framework net5.0
+		- Klassenbibliothek
+			dotnet new classlib --framework net5.0
+	3. "Assets for Build and Debug"
+		a. Per Popup unten rechts generieren lassen 
+			(kommt schneller, wenn die Program.cs geöffnet wird)
+		b. Per Befehlspalette (Strg+Shift+P): ".NET: Generate Assets for Build and Debug"
+	4. Terminal als Ausgabe festlegen
+		a. .vscode\launch.json öffnen
+		b. Zeile "console": "internalConsole" suchen
+		c. Ändern zu 
+		"console": "integratedTerminal"
+		d. launch.json speichern
