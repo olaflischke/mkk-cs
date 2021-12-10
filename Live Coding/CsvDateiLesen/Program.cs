@@ -19,7 +19,7 @@ namespace CsvDateiLesen
                 int zeilenNr = 1;
                 while (!reader.EndOfStream)
                 {
-                    string zeile = reader.ReadLine();
+                    string zeile = reader.ReadLine(); // Reader liest eine Zeile als String
                     if (zeilenNr > 1) // Erste Zeile enthält Überschriften
                     {
                         // Verarbeitung von CSV

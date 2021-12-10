@@ -49,6 +49,9 @@ namespace Weihnachtsbaum
                     leerzeichen = leerzeichen + " ";
                 }
 
+                // Johny Wachholz' Version (statt obiger For-Schleife):
+                // string leerzeichen = new String(' ', (hoehe - (zeile + 1)));
+
                 Console.WriteLine(leerzeichen + sterne);
 
                 sterne = sterne + "**";
